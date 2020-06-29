@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">KOEN PTS</string>
+    <string name="blank"> </string>
+    <string name="power_plant">
+        Power Plant Technology Share \nSystem Application
+    </string>
+    <string name="some_id">
+        사번 입력
+    </string>
+    <string name="teddy_korene">
+        teddy@koenergy.co.kr
+    </string>
+    <string name="main_title">
+
+KOEN PTS APP
+</string>
+
+    <string name="near_id">
+
+내 주변 설비
+</string>
+
+    <string name="menu">
+
+MENU
+</string>
+    <string name="text_login_">
+
+\u00EC\u009D\u00B4\u00EC\u00A4\u0080\u00EC\u0098\u0081  \u00EB\u008B\u0098
+</string>
+    <string name="text">
+
+내 주변 설비
+</string>
+
+    <string name="text_user_n">
+
+User number
+</string>
+
+    <string name="text_menu_1">
+
+영상 모니터링
+</string>
+    <string name="text_menu_2">
+
+소화기 점검
+</string>
+    <string name="text_menu_3">
+
+안전 신고
+</string>
+
+    <string name="text_ex_tit">
+
+소화기 점검 목록
+</string>
+
+
+</resources>

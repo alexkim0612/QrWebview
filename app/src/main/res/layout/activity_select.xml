@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/bg_mobile_v"
+        android:viewportWidth="360"
+        android:viewportHeight="340"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/v_avatar02_"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/v_avatar02"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="277dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/text_divisi"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintStart_toEndOf="@+id/v_avatar02_"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <TextView
+        android:id="@+id/tv_dept_name"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="277dp"
+        android:gravity="center_vertical"
+        android:textAppearance="@style/text_divisi"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toStartOf="@+id/btn_logout"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <ImageView
+        android:id="@+id/btn_logout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/ic_icon_logout"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+    <TextView
+        android:id="@+id/tv_nearmachine"
+        android:layout_width="296dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="217dp"
+        android:gravity="center_vertical"
+        android:text="@string/text"
+        android:textAppearance="@style/text"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="@+id/bg"
+        app:layout_constraintStart_toStartOf="@id/bg"
+        app:layout_constraintTop_toTopOf="@+id/bg" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/machine_1"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/machine"
+        app:layout_constraintBottom_toTopOf="@id/machine_2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nearmachine"
+        app:layout_constraintStart_toStartOf="@+id/tv_nearmachine"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nearmachine">
+
+        <ImageView
+            android:id="@+id/machine_1_wifi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="248dp"
+            android:src="@drawable/icon_wifi01"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/machine_1_battery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/machine_1_battery"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/icon_battery01"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_1_wifi" />
+
+        <TextView
+            android:id="@+id/tv_machine_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="32dp"
+            android:text="Boilier Feed Pump - Pump"
+            android:textAppearance="@style/Cap"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_machine_1_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="B9:40:7F:30:F1"
+            android:textAppearance="@style/Cap"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_machine_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_machine_1" />
+
+        <ImageView
+            android:id="@+id/machine_1_sc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/icon_shortcut"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/machine_2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/machine"
+        app:layout_constraintBottom_toTopOf="@+id/machine_3"
+        app:layout_constraintEnd_toEndOf="@+id/machine_1"
+        app:layout_constraintStart_toStartOf="@+id/machine_1"
+        app:layout_constraintTop_toBottomOf="@+id/machine_1">
+
+        <ImageView
+            android:id="@+id/machine_2_wifi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="248dp"
+            android:src="@drawable/icon_wifi02"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/machine_2_battery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/machine_2_battery"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/icon_battery02"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_2_wifi" />
+
+        <TextView
+            android:id="@+id/tv_machine_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="32dp"
+            android:text="Boilier Feed Pump - Pump"
+            android:textAppearance="@style/Cap"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_machine_2_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="B9:40:7F:30:F1"
+            android:textAppearance="@style/Cap"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_machine_2"
+            app:layout_constraintTop_toBottomOf="@id/tv_machine_2" />
+
+        <ImageView
+            android:id="@+id/machine_2_sc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/icon_shortcut"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/machine_3"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/machine"
+        app:layout_constraintBottom_toBottomOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="@+id/machine_2"
+        app:layout_constraintStart_toStartOf="@+id/machine_2"
+        app:layout_constraintTop_toBottomOf="@+id/machine_2">
+
+        <ImageView
+            android:id="@+id/machine_3_wifi"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="248dp"
+            android:src="@drawable/icon_wifi03"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/machine_3_battery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/machine_3_battery"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="252dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/icon_battery03"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/machine_3_wifi" />
+
+        <TextView
+            android:id="@+id/tv_machine_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="32dp"
+            android:text="Boilier Feed Pump - Pump"
+            android:textAppearance="@style/Cap"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_machine_3_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="B9:40:7F:30:F1"
+            android:textAppearance="@style/Cap"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_machine_3"
+            app:layout_constraintTop_toBottomOf="@id/tv_machine_3" />
+
+        <ImageView
+            android:id="@+id/machine_3_sc"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="248dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/icon_shortcut"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/cctv_btn"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button02"
+        android:elevation="16dp"
+        android:onClick="cctv"
+        android:src="@drawable/ic_cctv_btn"
+        app:layout_constraintBottom_toTopOf="@id/fem_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg" />
+
+    <ImageButton
+        android:id="@+id/fem_btn"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button02"
+        android:elevation="16dp"
+        android:onClick="fem"
+        android:src="@drawable/ic_fire_btn"
+        app:layout_constraintBottom_toTopOf="@+id/alert_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cctv_btn" />
+
+    <ImageButton
+        android:id="@+id/alert_btn"
+        android:layout_width="296dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button02"
+        android:elevation="16dp"
+        android:onClick="fire"
+        android:src="@drawable/ic_alert_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fem_btn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="344dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="599dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.096875" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

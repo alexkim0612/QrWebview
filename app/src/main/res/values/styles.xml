@@ -1,0 +1,260 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#1E88E5</item>
+        <item name="colorPrimaryDark">#1E88E5</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="power_plant">
+        <item name="android:textColor">#AEAEAE</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="some_id">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#AEAEAE</item>
+    </style>
+    <style name="teddy_koene">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#AEAEAE</item>
+    </style>
+    <style name="main_title">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="near_id">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="menu">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:textColor">
+            #333333
+        </item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="text_login_">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="text">
+
+    <item name="android:textSize">
+        24sp
+    </item>
+
+    <item name="android:textColor">
+        #FFFFFF
+    </item>
+
+</style>
+
+        <style name="H1Head">
+            <item name="android:textSize">121sp</item>
+            <item name="android:letterSpacing">-0.01</item>
+        </style>
+        <style name="H1HeadKr">
+            <item name="android:textSize">121sp</item>
+            <item name="android:letterSpacing">-0.01</item>
+        </style>
+        <style name="H2Head">
+            <item name="android:textSize">81sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="H2HeadKr">
+            <item name="android:textSize">81sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="H3Head">
+            <item name="android:textSize">54sp</item>
+        </style>
+        <style name="H3HeadKr">
+            <item name="android:textSize">54sp</item>
+        </style>
+        <style name="H4Head">
+            <item name="android:textSize">36sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="H4HeadKr">
+            <item name="android:textSize">36sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="H5Head">
+            <item name="android:textSize">24sp</item>
+        </style>
+        <style name="H5HeadKr">
+            <item name="android:textSize">24sp</item>
+        </style>
+        <style name="H6Head">
+            <item name="android:textSize">20sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="H6HeadKr">
+            <item name="android:textSize">20sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="Sub1Kr">
+            <item name="android:textSize">16sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="Sub1">
+            <item name="android:textSize">16sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="Body1">
+            <item name="android:textSize">16sp</item>
+            <item name="android:letterSpacing">0.03</item>
+        </style>
+        <style name="Body1Kr">
+            <item name="android:textSize">16sp</item>
+            <item name="android:letterSpacing">0.03</item>
+        </style>
+        <style name="Sub2">
+            <item name="android:textSize">14sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="Btn">
+            <item name="android:textSize">14sp</item>
+            <item name="android:letterSpacing">0.09</item>
+        </style>
+        <style name="Body2">
+            <item name="android:textSize">14sp</item>
+            <item name="android:letterSpacing">0.02</item>
+        </style>
+        <style name="Sub2Kr">
+            <item name="android:textSize">14sp</item>
+            <item name="android:letterSpacing">0.01</item>
+        </style>
+        <style name="BtnKr">
+            <item name="android:textSize">14sp</item>
+            <item name="android:letterSpacing">0.09</item>
+        </style>
+        <style name="Body2Kr">
+            <item name="android:textSize">14sp</item>
+            <item name="android:letterSpacing">0.02</item>
+        </style>
+        <style name="Cap">
+            <item name="android:textSize">12sp</item>
+            <item name="android:letterSpacing">0.03</item>
+            <item name="android:textColor">#333333</item>
+        </style>
+        <style name="CapKr">
+            <item name="android:textSize">12sp</item>
+            <item name="android:letterSpacing">0.03</item>
+        </style>
+        <style name="OverKr">
+            <item name="android:textSize">10sp</item>
+            <item name="android:letterSpacing">0.15</item>
+        </style>
+        <style name="Over">
+            <item name="android:textSize">10sp</item>
+            <item name="android:letterSpacing">0.15</item>
+        </style>
+   <style name="text_user_n">
+
+    <item name="android:textSize">
+        16sp
+    </item>
+
+    <item name="android:letterSpacing">
+        0.03
+    </item>
+
+    <item name="android:textColor">
+        #C4C4C4
+    </item>
+
+</style>
+
+    <style name="text_menu_t">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">#333333</item>
+
+    </style>
+
+    <style name="text_ex_tit">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #333333
+        </item>
+
+    </style>
+
+    <style name="text_divisi">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+
+
+    </resources>

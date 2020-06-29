@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"  android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="111dp"
+            android:layout_marginBottom="441dp"
+            android:src="@drawable/main_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="32dp" />
+
+
+
+
+    <EditText
+        android:id="@+id/et_empnum"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="253dp"
+        android:hint="@string/text_user_n"
+        android:singleLine="true"
+        android:lines="1"
+        android:textAppearance="@style/text_user_n"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/v_avatar01"
+        app:layout_constraintBottom_toBottomOf="@+id/et_empnum"
+        app:layout_constraintEnd_toEndOf="@+id/et_empnum"
+        app:layout_constraintStart_toStartOf="@+id/et_empnum"
+        app:layout_constraintTop_toTopOf="@+id/et_empnum" />
+
+    <Button
+        android:id="@+id/btn_Enter"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button01"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        />
+
+    <Button
+        android:id="@+id/btn_dev"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#00ff0000"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+
+        android:text="로그인 정보 기억하기"
+        app:layout_constraintEnd_toEndOf="@+id/et_empnum"
+        app:layout_constraintTop_toBottomOf="@+id/et_empnum" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
